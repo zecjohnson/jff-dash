@@ -18,6 +18,7 @@ import plotly.graph_objs as go
 from plotly.subplots import make_subplots
 
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
+server = app.server
 
 risk_options = [
     {'label': 'Low', 'value': 'Low'},
